@@ -2,6 +2,10 @@
 
 In order to run this application you need to do (just) a little setup.
 
+After you clone the application, make sure you run the composer installer like:
+
+`composer install`
+
 Set up a domain for the application so that you use something like:
 
 `domain-of-your-app.test`
