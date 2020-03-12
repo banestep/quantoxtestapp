@@ -10,9 +10,29 @@ class Students
         }
         else
         {
-            $id         = (int) $id;
-            $student    = new Student($id);
-            echo '<pre>'; var_dump($student); echo '</pre>';
+            $id = (int) $id;
+            $this->doTheReport($id);
         }
+    }
+
+    private function doTheReport($id)
+    {
+        $student    = new Student($id);
+        //echo '<pre>'; var_dump($student); echo '</pre>';
+        $board      = $student->getBoard();
+
+        switch($board)
+        {
+            case 'csm':
+                $board_obj = new CSMBoard();
+                break;
+            case 'csmb':
+                $board_obj = new CSMBBoard();
+                break;
+            default:
+                return false;
+        }
+
+        $board_obj->doReportForStudent($student);
     }
 }

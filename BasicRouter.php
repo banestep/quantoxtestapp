@@ -4,6 +4,11 @@ class BasicRouter
 {
     function __construct() 
     {
+        $this->routeTheRoute();
+    }
+
+    private function routeTheRoute()
+    {
         $uri    = trim($_SERVER['REQUEST_URI'], '/');
         $urray  = explode('/', $uri);
 
