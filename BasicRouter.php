@@ -23,8 +23,6 @@ class BasicRouter
         {
             echo 'Hardcoding home page to save time.';
         }
-
-        //var_dump($urray);
     }
     
     private function toCamelCase($string)
