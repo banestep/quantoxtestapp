@@ -18,7 +18,6 @@ class Students
     private function doTheReport($id)
     {
         $student    = new Student($id);
-        //echo '<pre>'; var_dump($student); echo '</pre>';
         $board      = $student->getBoard();
 
         switch($board)
@@ -30,6 +29,7 @@ class Students
                 $board_obj = new CSMBBoard();
                 break;
             default:
+                echo 'No such student or bad db entry';
                 return false;
         }
 

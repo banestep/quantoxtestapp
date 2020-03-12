@@ -1,5 +1,6 @@
 <?php
 
+require __DIR__ . '/vendor/spatie/array-to-xml/src/ArrayToXml.php';
 require __DIR__ . '/BasicRouter.php';
 require __DIR__ . '/Students.php';
 require __DIR__ . '/Student.php';
