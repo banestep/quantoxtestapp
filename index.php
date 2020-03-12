@@ -3,6 +3,9 @@
 require __DIR__ . '/BasicRouter.php';
 require __DIR__ . '/Students.php';
 require __DIR__ . '/Student.php';
+require __DIR__ . '/Board.php';
+require __DIR__ . '/CSMBoard.php';
+require __DIR__ . '/CSMBBoard.php';
 
 /* config */
 define('DBHOST', '');
