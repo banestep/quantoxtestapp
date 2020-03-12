@@ -12,7 +12,7 @@ class Students
         {
             $id         = (int) $id;
             $student    = new Student($id);
-            var_dump($student);
+            echo '<pre>'; var_dump($student); echo '</pre>';
         }
     }
 }
